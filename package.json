@@ -1,0 +1,36 @@
+{
+  "name": "postcss-at-debug",
+  "version": "0.1.1",
+  "description": "Keep nodes inside the @debug at-rule in debug mode and remove them in release mode",
+  "keywords": [
+    "postcss",
+    "css",
+    "postcss-plugin"
+  ],
+  "author": "Nick Bodnariuk <rezoh@ya.ru>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rezoh/postcss-at-debug.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rezoh/postcss-at-debug/issues"
+  },
+  "dependencies": {
+    "postcss": "^5.2.6"
+  },
+  "devDependencies": {
+    "eslint": "^3.12.2",
+    "eslint-config-postcss": "^2.0.2",
+    "jest": "^18.0.0"
+  },
+  "scripts": {
+    "test": "jest && eslint *.js"
+  },
+  "eslintConfig": {
+    "extends": "eslint-config-postcss/es5",
+    "env": {
+      "jest": true
+    }
+  }
+}
