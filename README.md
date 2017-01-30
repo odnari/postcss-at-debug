@@ -67,7 +67,7 @@ h1 {
 
 var output = postcss([
 		debug({
-		    debug: true
+		    debug: false
 		})
 	])
 	.process(mycss)
