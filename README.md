@@ -1,4 +1,4 @@
-# PostCSS At-Debug
+# PostCSS At-Debug [![Build Status](https://travis-ci.org/rezoh/postcss-at-debug.svg?branch=master)](https://travis-ci.org/rezoh/postcss-at-debug)
 
 [PostCSS](https://github.com/postcss/postcss) plugin to keep nodes inside the @debug at-rule in debug mode and remove them in release mode.
 
