@@ -1,20 +1,14 @@
-const postcss = require('postcss');
-const DEBUGATRULENAME = 'debug';
-
-module.exports = postcss.plugin('postcss-at-debug', function (opts) {
-    opts = opts || {
-        debug: false
-    };
-
-    return function (root) {
-        root.walkAtRules(DEBUGATRULENAME, rule => {
-            if (opts.debug) {
-                rule.nodes.forEach(node => {
-                    rule.parent.insertBefore(rule, node);
+module.exports = (opts = { debug : true }) => {
+    return {
+        postcssPlugin: 'postcss-at-debug',
+        AtRule: {
+            debug: rule => {
+                opts.debug && rule.each(node => {
+                    rule.before(node);
                 });
+                rule.remove();
             }
-
-            rule.remove();
-        });
+        }
     };
-});
+};
+module.exports.postcss = true;
