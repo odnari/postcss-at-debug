@@ -16,13 +16,15 @@
   "bugs": {
     "url": "https://github.com/rezoh/postcss-at-debug/issues"
   },
-  "dependencies": {
-    "postcss": "^5.2.6"
-  },
+  "dependencies": {},
   "devDependencies": {
     "eslint": "^3.12.2",
     "eslint-config-postcss": "^2.0.2",
-    "jest": "^18.0.0"
+    "jest": "^18.0.0",
+    "postcss": "^8.2.6"
+  },
+  "peerDependencies": {
+    "postcss": "^8.2.6"
   },
   "scripts": {
     "test": "jest && eslint *.js"
