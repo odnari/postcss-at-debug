@@ -18,10 +18,20 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "eslint": "^3.12.2",
-    "eslint-config-postcss": "^2.0.2",
-    "jest": "^18.0.0",
-    "postcss": "^8.2.6"
+    "@logux/eslint-config": "^46.0.0",
+    "eslint": "^8.1.0",
+    "eslint-config-postcss": "^4.0.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-jest": "^25.2.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prefer-let": "^3.0.0",
+    "eslint-plugin-promise": "^5.1.1",
+    "eslint-plugin-security": "^1.4.0",
+    "eslint-plugin-standard": "^5.0.0",
+    "eslint-plugin-unicorn": "^37.0.1",
+    "jest": "^27.3.1",
+    "postcss": "^8.3.11"
   },
   "peerDependencies": {
     "postcss": "^8.2.6"
@@ -30,7 +40,7 @@
     "test": "jest && eslint *.js"
   },
   "eslintConfig": {
-    "extends": "eslint-config-postcss/es5",
+    "extends": "eslint-config-postcss",
     "env": {
       "jest": true
     }
