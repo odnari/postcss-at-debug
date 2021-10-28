@@ -1,6 +1,6 @@
 {
   "name": "postcss-at-debug",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Keep nodes inside the @debug at-rule in debug mode and remove them in release mode",
   "keywords": [
     "postcss",
